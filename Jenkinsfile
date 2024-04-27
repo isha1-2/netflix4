@@ -24,10 +24,10 @@ pipeline {
             steps {
                 script {
                     if (env.ENV == 'QA') {
-                        sh 'cp target/netflix3.war /home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
+                        sh 'cp target/netflix4.war /home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
                         echo "Deployment has been COMPLETED on QA!"
                     } else if (env.ENV == 'UAT') {
-                        sh 'cp target/netflix3.war /home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
+                        sh 'cp target/netflix4.war /home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
                         echo "Deployment has been done on UAT!"
                     }
                 }
