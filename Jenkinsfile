@@ -27,7 +27,7 @@ pipeline {
         	echo "deployment has been COMPLETED on QA!"
 			 }
 			else ( env.ENV == 'UAT' ){
-    		sh 'cp target/netflix4.war /webapps'/home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
+    		sh 'cp target/netflix4.war /home/isha/Documents/DevOps_software/apache-tomcat-9.0.88/webapps'
     		echo "deployment has been done on UAT!"
 			}
                 stage('slack') {
